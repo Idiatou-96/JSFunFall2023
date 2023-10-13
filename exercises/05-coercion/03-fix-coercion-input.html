@@ -48,8 +48,8 @@
             // When you get any text from textboxes, it is always of type string
             const num1 = document.querySelector("#a").value || "";
             const num2 = document.querySelector("#b").value || "";
-
-            const sum = num1 + num2; // Fix this line so that it adds the two numbers together instead of combining a string
+            //added Math.floor to convert the string
+            const sum = Math.floor(num1) + Math.floor(num2); // Fix this line so that it adds the two numbers together instead of combining a string
 
             document.querySelector("#answer").textContent = sum || "-";
           });

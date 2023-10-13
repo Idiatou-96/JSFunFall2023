@@ -6,3 +6,5 @@
 // WRITE YOUR ANSWER BELOW THIS LINE
 
 const result = 3 + 5 * 100;
+const fullName = "coco chanel";
+const lastName = fullName.substring(lastSpaceIndex + 1);

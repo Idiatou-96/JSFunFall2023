@@ -8,5 +8,7 @@ let num2 = "7"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-
+//this will log 27
 let sum = num1 + num2;
+// this will log after I converted the num2 into an integer
+let sum2 = num1 + Math.floor(num2);

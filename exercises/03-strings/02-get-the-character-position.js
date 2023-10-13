@@ -19,3 +19,8 @@ let letter = "i"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let characterPosition = firstName.indexOf(letter);
+let myString = "im typing withouth all capitalize";
+let newStr = myString[0].toUpperCase;
+console.log(newStr);
