@@ -1,4 +1,4 @@
-let day = "Saturday";
+const day = "Saturday";
 
 /**
  * Create a variable called "isWeekend". (Do not use var.)
@@ -9,3 +9,11 @@ let day = "Saturday";
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let isWeekend;
+
+if (isWeekend === "saturday" || day === "sunday") {
+  isWeekend = true;
+} else {
+  isWeekend = false;
+}
+console.log(isWeekend);

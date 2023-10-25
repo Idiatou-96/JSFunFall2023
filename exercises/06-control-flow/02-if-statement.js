@@ -19,3 +19,19 @@ if (tip > 0) {
 } else {
   total = subtotal;
 }
+
+const age = true;
+const myName = true;
+
+if (age && myName) {
+  console.log("what is your name and age");
+}
+
+const driveCar = true;
+const takeUber = true;
+
+if (driveCar || takeUber) {
+  console.log("I will be on time ");
+} else {
+  console.log("I will be late ");
+}

@@ -11,9 +11,13 @@ let actualBMI = 27; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-if (targetBMI == actualBMI) {
-  isNotAtGoalWeight = false;
-}
 if (targetBMI !== actualBMI) {
   isNotAtGoalWeight = true;
+} else {
+  isNotAtGoalWeight = false;
 }
+
+const burger = (burgerName, side) => {
+  return `"I love  ${burgerName} and ${side}`;
+};
+burger("chicken", "fries");

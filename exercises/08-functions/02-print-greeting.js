@@ -12,3 +12,7 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const printGreeting = (myName) => {
+  console.log(` hello ${myName} !`);
+};
+printGreeting("tuy");

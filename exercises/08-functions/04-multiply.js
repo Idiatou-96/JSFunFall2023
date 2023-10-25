@@ -16,3 +16,12 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const multiply = (num1, num2) => {
+  return num1 * num2;
+};
+
+// Test the function
+console.log(multiply(5, 5)); // Output: 25
+console.log(multiply(2, 5)); // Output: 10
+console.log(multiply(0, 5)); // Output: 0
