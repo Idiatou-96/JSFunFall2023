@@ -19,3 +19,5 @@ let results = [
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const place = results[2];

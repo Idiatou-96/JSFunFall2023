@@ -7,3 +7,14 @@ let numbers = [10000, -8, 10, 0.7]; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+// Initialize the highest variable with the first number in the array
+let highest = numbers[0];
+
+for (const number of numbers) {
+  if (number > highest) {
+    highest = number;
+  }
+}
+
+console.log(highest); // This will output the highest number in the array
