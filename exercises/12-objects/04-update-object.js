@@ -15,5 +15,5 @@ let student = {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-student.skills.push(student);
+student.skills.push(cancodeStudent);
 student.name = "idiatou";

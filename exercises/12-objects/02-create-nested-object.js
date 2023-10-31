@@ -30,3 +30,13 @@ let linkedInLink = "https://linkedin.com/profile"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const graduate = {
+  name: "idiatou",
+  graduationYear: 2017,
+  skills: ["java", "css"],
+  links: {
+    githubLink: "https",
+    linkedInLink: "https://",
+  },
+};

@@ -19,4 +19,6 @@ const blogPost = {
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let values = blogPost;
+let values = blogPost.content;
+
+console.log(blogPost);
