@@ -21,3 +21,7 @@ const newItem = { name: "Popcorn", price: 5 }; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const newShoppingCart = { ...shoppingCart, ...newItem };
+
+console.log(newShoppingCart);

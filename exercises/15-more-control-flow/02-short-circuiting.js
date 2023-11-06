@@ -10,4 +10,6 @@ let error = "Username already exists."; // When the test runs, this could also b
  * then "errorMessage" should equal "An unexpected error occurred.".
  */
 
-// WRITE YOUR ANSWER BELOW THIS LINE
+// WRITE YOUR ANSWER BELOW THIS LIne
+
+let errorMessage = error || "an unexpected error occured";
