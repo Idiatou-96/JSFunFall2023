@@ -14,10 +14,12 @@ numbers.forEach(printNumbers);
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-const weekDays = ["Monday", "tuesday"];
-
-const printWeekDays = (weekDay, index, array) => {
-  console.log(`${index + 1}  ${weekDay}`);
+const updateLowestNumber = (number, index, array) => {
+  if (number < lowestNumber) {
+    lowestNumber = number;
+  }
 };
 
-weekDays.forEach(printWeekDays);
+numbers.forEach(updateLowestNumber);
+
+console.log(lowestNumber);

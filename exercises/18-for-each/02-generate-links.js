@@ -24,3 +24,10 @@ const links = [
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+links.forEach((link, index) => {
+  // Adding 1 to index to start numbering from 1
+  htmlStr += `<a href="${link}">${index + 1}. ${link}</a>`;
+});
+
+console.log(htmlStr);
