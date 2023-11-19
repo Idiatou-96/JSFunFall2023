@@ -24,6 +24,15 @@ const capitalizeString = (str) => {
  */
 const capitalizeArray = (originalArray, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  //declare a new array
+  let newArray = [];
+  //loop
+  for (let string of originalArray) {
+    const newString = callback(string);
+    newArray.push(newString);
+  }
+
+  return newArray;
 };
 
 // Uncomment me to test your answer in Quokka

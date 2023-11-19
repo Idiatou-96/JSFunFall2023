@@ -23,8 +23,10 @@ const format = (string1, string2) => {
 
 const formatString = (string1, string2, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  return string1, string2;
 };
 
+console.log(formatString("good", "morning"));
 // Uncomment me to test in Quokka
 // console.log( formatString("Wash dishes", "Do laundry", format) );
 

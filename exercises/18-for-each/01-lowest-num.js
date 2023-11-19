@@ -1,6 +1,10 @@
 let lowestNumber = Infinity; // This is the highest possible number in JavaScript
 const numbers = [1, 10, -2, 3, 4]; // e.g.
 
+const printNumbers = (number, index, array) => {
+  lowestNumber = numbers;
+};
+numbers.forEach(printNumbers);
 /**
  * Using ".forEach", loop through the array "numbers"
  * and set "lowestNumber" equal to the lowest number in the array.
@@ -9,3 +13,11 @@ const numbers = [1, 10, -2, 3, 4]; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const weekDays = ["Monday", "tuesday"];
+
+const printWeekDays = (weekDay, index, array) => {
+  console.log(`${index + 1}  ${weekDay}`);
+};
+
+weekDays.forEach(printWeekDays);

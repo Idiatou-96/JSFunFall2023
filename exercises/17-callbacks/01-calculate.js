@@ -39,7 +39,9 @@ const subtract = (num1, num2) => {
 
 const calculate = (num1, num2, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  return callback(num1 + num2);
 };
+console.log(calculate(10, 12));
 
 // Uncomment me to test in Quokka
 // console.log( calculate(5, 10, add) );
