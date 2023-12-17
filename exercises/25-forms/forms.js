@@ -10,6 +10,12 @@
    * it should display what the user is typing in the <div></div> tags below.
    */
   // Write your answer here
+  !function () {
+    const myUser = document.querySelector("form-control mb-3");
+    const displ = document.querySelector("card bg-warning");
+    myUser.addEventListener("display");
+  };
+
   /**
    * Problem 2: Display the results of the world's most pointless search engine.
    *

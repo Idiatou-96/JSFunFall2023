@@ -17,4 +17,60 @@
    *
    * You must make two AJAX request to solve this problem.
    */
+  const dropdown = document.getElementById("dropdown");
+  const getLink = document.getElementById("get-schwifty");
+
+  // Function to populate the dropdown with characters
+  function populateDropdown() {
+    const apiUrl = "https://rickandmortyapi.com/api/character";
+
+    // Make AJAX request to get the list of characters
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        const characters = response.data.results;
+
+        // Populate the dropdown with character names and IDs
+        characters.forEach((character) => {
+          const option = document.createElement("option");
+          option.value = character.id;
+          option.text = character.name;
+          dropdown.appendChild(option);
+        });
+      })
+      .catch((error) => {
+        console.error("Error fetching characters:", error);
+      });
+  }
+
+  // Function to display the selected character's image
+  function displayCharacterImage(characterId) {
+    const apiUrl = `https://rickandmortyapi.com/api/character/${characterId}`;
+
+    // Make AJAX request to get the details of the selected character
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        const character = response.data;
+
+        // Display the character's image
+        getLink.src = character.image;
+        getLink.alt = character.name;
+      })
+      .catch((error) => {
+        console.error("Error fetching character details:", error);
+      });
+  }
+
+  // Event listener for dropdown change
+  dropdown.addEventListener("change", function () {
+    const selectedCharacterId = this.value;
+
+    if (selectedCharacterId !== "Select a character") {
+      displayCharacterImage(selectedCharacterId);
+    }
+  });
+
+  // Initialize the dropdown
+  populateDropdown();
 })();

@@ -5,4 +5,9 @@
  */
 (function () {
   // Put your answers in here
+  const clas = document.querySelector("#clas");
+  console.log(clas);
+
+  const clos = document.querySelector("#clos");
+  console.log(clos);
 })();
